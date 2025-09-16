@@ -23,8 +23,8 @@ services:
       - ./server/conf/apache/000-default.conf:/etc/apache2/sites-available/000-default.conf
       - ./server/conf/apache/default-ssl.conf:/etc/apache2/sites-available/default-ssl.conf
       - ./server/conf/apache/default-ssl.conf:/etc/apache2/sites-enabled/default-ssl.conf
-      - ./server/conf/certs/domain.dev.pem:/etc/ssl/certs/domain.dev.pem
-      - ./server/conf/certs/domain.dev-key.pem:/etc/ssl/private/domain.dev-key.pem
+      - ./server/conf/certs/${DOMAIN_NAME}.pem:/etc/ssl/certs/${DOMAIN_NAME}.pem
+      - ./server/conf/certs/${DOMAIN_NAME}-key.pem:/etc/ssl/private/${DOMAIN_NAME}-key.pem
     networks:
       - server
 

@@ -1,4 +1,5 @@
 FROM wordpress
+ENV DOMAIN_NAME my_custom.domain
 RUN update-ca-certificates
 RUN a2enmod ssl headers deflate expires
 RUN service apache2 restart

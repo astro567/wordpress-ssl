@@ -5,8 +5,10 @@
 /server/conf/certs/
 /wp-admin/
 /wp-includes/
-/wp-content/plugins/
-/wp-content/themes/
+/wp-content/plugins/*
+!/wp-content/plugins/smart/
+/wp-content/themes/*
+!/wp-content/themes/botiga-child/
 /wp-content/index.php
 /wp-content/languages
 /index.php
